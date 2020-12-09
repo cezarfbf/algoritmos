@@ -1,0 +1,17 @@
+All the operation that can be performed on an array can be performed on a linked list
+
+linked list:
+perform better like insertion in between including beginning and end of the list, value deletion
+
+-time complexity
+searching O(n)
+element deletion O(1)
+
+array list:
+array list is better than linked list like searching, value modification
+
+-time complexity
+searching O(n) / known index O(1)
+element deletion O(n)
+
+linked list
