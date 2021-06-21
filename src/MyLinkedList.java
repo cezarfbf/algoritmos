@@ -1,4 +1,4 @@
-public class LinkedList {
+public class MyLinkedList {
     private Node startNode = null;
     private Node endNode = null;
     private int nodeCounter;
@@ -117,7 +117,7 @@ public class LinkedList {
     }
 
     public static void main(String args[]) {
-        LinkedList linkedList = new LinkedList();
+        MyLinkedList linkedList = new MyLinkedList();
         linkedList.insertNodeAtEnd(10);
         linkedList.insertNodeAtEnd(20);
         linkedList.insertNodeAtEnd(30);
