@@ -15,11 +15,11 @@ public class AlgoritmosOrdenacao {
         selectSort(vetor);
     }
 
-    private static void bubbleSort(int[] vetor){
+    private static void bubbleSort(int[] vetor) {
         int aux;
-        for (int i=0; i<vetor.length; i++){
-            for (int j=i+1; j<vetor.length; j++){
-                if (vetor[i] > vetor[j]){
+        for (int i = 0; i < vetor.length; i++) {
+            for (int j = i + 1; j < vetor.length; j++) {
+                if (vetor[i] > vetor[j]) {
                     aux = vetor[i];
                     vetor[i] = vetor[j];
                     vetor[j] = aux;
@@ -28,17 +28,17 @@ public class AlgoritmosOrdenacao {
         }
 
         System.out.print("\nBubble Sort: ");
-        for (int i=0; i<vetor.length; i++){
-            System.out.print(vetor[i]+" ");
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print(vetor[i] + " ");
         }
     }
 
-    private static void selectSort(int[] vetor){
+    private static void selectSort(int[] vetor) {
         int menor_pos, aux;
-        for (int i=0; i<vetor.length; i++){
+        for (int i = 0; i < vetor.length; i++) {
             menor_pos = i;
-            for (int j=i+1; j<vetor.length; j++){
-                if (vetor[j] < vetor[menor_pos]){
+            for (int j = i + 1; j < vetor.length; j++) {
+                if (vetor[j] < vetor[menor_pos]) {
                     menor_pos = j;
                 }
             }
@@ -48,8 +48,8 @@ public class AlgoritmosOrdenacao {
         }
 
         System.out.print("\nSelect Sort: ");
-        for (int i=0; i<vetor.length; i++){
-            System.out.print(vetor[i]+" ");
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print(vetor[i] + " ");
         }
     }
 }
